@@ -5,7 +5,13 @@ And how functional programming can help, and even provide a solution simpler tha
 
 ## Usage
 
+### Locally on your machine
+
 Clone, `nvm install`, then read and run each example.
+
+### Using the TypeScript playground
+
+TypeScript website has a convenient [playground](https://www.typescriptlang.org/play): you can copy-paste and run the code of each example directly over there.
 
 ## Examples
 
