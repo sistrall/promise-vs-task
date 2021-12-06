@@ -1,0 +1,16 @@
+{
+  "name": "promise-vs-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fp-ts": "^2.11.5",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
