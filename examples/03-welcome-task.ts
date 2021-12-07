@@ -19,7 +19,7 @@ const aTaskThatNeverFails: Task<boolean> = async () => {
 
 (async () => console.log(await aTaskThatNeverFails()))()
 
-// A promise describes the result of an execution: it's eager
-// Tasks don't execute until they're called: they're lazy
-// Task describes an execution
-// We can run a task multiple times
+// A promise describes the result of an execution: it's eager.
+// Tasks don't execute until they're called: they're lazy.
+// Task describes an execution.
+// We can run a task multiple times.

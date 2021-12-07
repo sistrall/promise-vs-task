@@ -1,7 +1,7 @@
 // Using `await` doesn't change a thing: 
 // we can consider it pure syntactic sugar for `then`.
 // Still, the word is kind-of misleading like `then`:
-// if I'm await for something to happen, I can easily suppose
+// if I'm awaiting for something to happen, I can easily suppose
 // that it happens while I wait, not necessarily that it 
 // already happened.
 //

@@ -18,9 +18,9 @@ const getRestaurantId = ({ restaurantId }: Reservation) => restaurantId
 // effort to think about.
 // 
 // It turns out `Task` has some less-visible advantages. As an example,
-// `Promise`'s `catch` is not typed: that can lead weird bugs. By definition
+// `Promise`'s `catch` is not typed: that can lead to weird bugs. By definition
 // `Task`s cannot fail: that makes the error management mandatory by
-// using tools made on purpose to properly manage exceptions. What's even more
+// using specific tools to properly manage exceptions. What's even more
 // interesting is that, even including errors in the scope, it's possible 
 // to keep thinking in terms of composition and other mathematical constructs.
 
@@ -30,7 +30,7 @@ const map = <B, C>(g: (b: B) => C) =>
   (fb: Task<B>): Task<C> => 
     () => fb().then(g); // <-- this is a Task: a function without arguments returning a `Promise`
 
-// Look ma! No then, no await!
+// Look ma! No `then`, no `await`!
 const getReservationRestaurantId = flow(
   getReservation, 
   map(getRestaurantId)
